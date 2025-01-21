@@ -7,7 +7,20 @@
 #include "piece_functions.h"
 #include "helpers.h"
 
-// gcc /mnt/c/Users/steph/Documents/'Computer Science Projects'/'C Projects'/ChessBoard.c /mnt/c/Users/steph/Documents/'Computer Science Projects'/'C Projects'/helpers.c /mnt/c/Users/steph/Documents/'Computer Science Projects'/'C Projects'/printers.c /mnt/c/Users/steph/Documents/'Computer Science Projects'/'C Projects'/piece_functions.c -o board
+
+/*
+Compile:
+gcc main.c helpers.c printers.c piece_functions.c -o board2
+
+Make Library:
+gcc -c -fPIC main.c -o main.o
+gcc -c -fPIC helpers.c -o helpers.o
+gcc -c -fPIC printers.c -o printers.o
+gcc -c -fPIC piece_functions.c -o piece_functions.o
+gcc -shared -o libboard.so main.o helpers.o printers.o piece_functions.o
+*/
+
+
 
 // uppercase char pieces are white
 // lowercase char pieces are black

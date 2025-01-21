@@ -18,7 +18,7 @@ static int get_start_rank(int white)
     return startrank;
 }
 
-static int update_casualties(char board[][DIM], char dest)
+static void update_casualties(char board[][DIM], char dest)
 {
     int white = is_white(dest);
     int startrank = get_start_rank(white);
@@ -357,7 +357,6 @@ void free_valids(pos_node *valids_head)
     pos_node *last_node;
     while (cur_node->next != NULL)
     {
-        //printf("freeing\n");
         last_node = cur_node;
         cur_node = cur_node->next;
         free(last_node);
