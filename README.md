@@ -1,4 +1,4 @@
-#chess_board
+# chess_board
 
 Chess game engine written in C with full functionality, including support for valid move validation, castling, en passant, pawn promotion, and detection of check and checkmate.
 
